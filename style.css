@@ -1,0 +1,18 @@
+
+    #top {
+        height:60px;
+        text-align:center;
+        line-height:2.5;
+        font-weight:400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #A4262C;
+        color: white; 
+    }
+	a{
+		color:white;
+		margin:0 0 0 5px;
+		text-decoration:underline;
+	}
+	
