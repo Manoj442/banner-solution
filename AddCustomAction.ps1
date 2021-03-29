@@ -21,36 +21,7 @@ function Add-SPBanner($SiteUrl, $Credentials)
   $customJSAction.Sequence = 1000
   #make the changes
   $customJSAction.Update()
-  $context.ExecuteQuery()
-
-  #add jquery injection action
-  <#$customJSAction = $UserCustomActions.Add()
-  $customJSAction.Location = “ScriptLink”
-  #reference to JS file
-  $customJSAction.ScriptSrc = “/SiteAssets/js/jquery.min.js”
-  #load it last
-  $customJSAction.Title= “jquery"
-  $customJSAction.Sequence = 1000
-  #make the changes
-  $customJSAction.Update()
-  $context.ExecuteQuery()
-  #>
-
-   #add custom js injection action
-  <#$CSSURL="/SiteAssets/css/style.css";
-  
-  $customJSAction = $UserCustomActions.Add()
-  $customJSAction.Location = “ScriptLink”
-  #reference to JS file
-  $customJSAction.ScriptBlock = "document.write('<link rel=""stylesheet"" href=""$($CSSURL)"" crossorigin=""anonymous"" type=""text/css""/>')"
-  #load it last
-  $customJSAction.Title= “css for Banner"
-  $customJSAction.Sequence = 1000
-  #make the changes
-  $customJSAction.Update()
-  $context.ExecuteQuery()
-  #>
-  
+  $context.ExecuteQuery()  
 
   Write-Host “Banner has been Added…” -ForegroundColor Green
 }
